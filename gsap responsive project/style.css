@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{
+    padding:50px;
+    width:100%;
+    min-height:100%;
+    background-color:#655D4B;
+}
+#main nav{
+    display:flex;
+    height:30px;
+    justify-content: space-between;
+   
+
+}
+#main nav a{
+    text-decoration:none;
+    color:#fff;
+}
+
+#main nav #navright a{
+    margin-left:30px;
+    font-weight: 600;
+}
+
+#hero{
+    display:flex;
+    width:100%;
+    height: 80vh;
+    margin-top:50px;
+    
+    
+}
+
+#hero #left{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width:50%;
+    height:100%;
+    padding-left: 150px;
+    /* background-color: green; */
+}
+#left #chlft{
+    width:100%;
+    height:70%;
+    position: absolute;
+    z-index: 99;
+    /* background-color: rgba(188,143,143,0.589); */
+}
+#chlft h5{
+    /* display:flex;
+    align-items: center; */
+    color:#fff;
+    font-weight: 400;
+}
+#chlft h5 #line{
+    display: inline-block;
+    vertical-align:middle;
+    margin:0 10px;
+    width:50px;
+    height:1.2px;
+    background-color: #fff;
+}
+#hero #txt{
+    display:  flex;
+    justify-content:space-between;
+    width:100%;
+    height:200px;
+    margin-top: 40px;
+  
+   
+}
+#txt #txtlft{
+    width:18%;
+    height:100%;
+    /* background-color: aqua; */
+   
+}
+#txtlft h5{
+    font-size: 20px;
+
+  
+}
+#txt #txtrgt{
+    width:78%;
+    height:100%;
+    /* background-color: rgb(32, 52, 45); */
+}
+#txtrgt h1{
+    font-size:140px;
+    font-weight: 100;
+    line-height: 120px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color:#fff;
+    font-family:pacifico;
+}
+#txtrgt #icon{
+    display: flex;
+    position: absolute;
+    bottom:-35%;
+    right: 30%;
+    /* background-color: black; */
+
+}
+#icon i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80px;
+    height:80px;
+    margin-left: 30px;
+    border-radius: 50%;
+    border:1px solid #fff;
+    color:#fff
+    /* background-color: bisque; */
+
+}
+
+#hero #right{
+    position: relative;
+    width:50%;
+    height:100%;
+   
+}
+
+#right #imgcontainer{
+    position: relative;
+    width:60%;
+    height:100%;
+    background-image: url(https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#imgcontainer #circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+    top:50%;
+    transform:translate(50% ,-50%);
+    right:0;
+    color:#fff;
+    background-color: #f3a94e;
+}
+#right #rgtlnks{
+    display: flex;
+     top:50%;
+     align-items: flex-end;
+    flex-direction: column;
+    position: absolute;
+    right:0;
+    transform: translate(0,-50%);
+}
+#rgtlnks a{
+    margin-top:20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255,255,255,0.582);
+}
+
+@media(max-width:500px){
+    #main{
+        padding:25px 30px;
+        }
+        #main nav a{
+            font-size:12px;
+        }
+        #nright{
+            display:flex;
+        }
+        #hero{
+            flex-direction: column;
+        }
+        #hero #left{
+            min-height: 20vh;
+            padding-left:0px;
+            width:100%;
+            align-items: initial;
+        }
+        #hero #chlft{
+            position:static;
+            height:inherit;
+            min-height: 30vh;
+            
+        }
+        #chlft #txt{
+            justify-content: initial;
+            height: initial;
+            min-height: 40vh;
+            margin-top: 20px;
+            flex-direction: column; 
+        }
+        #txt #txtlft{
+            width:100%;
+            height: initial;
+        }
+        #txlft h5{
+            font-size:15px;
+
+        }
+        #txt #txtrgt{
+            width:100%;
+            height:initial;
+            min-height:30vh;
+        }
+        #txtrgt #icon i{ 
+        margin-top:50px;
+            position: static;
+        }
+        #txtrgt #icon i{ 
+            width:40px;
+            height:40px;
+            margin-left:0px;
+            margin-right: 20px;
+            }
+        #txtrgt h1{
+            font-size: 80px;
+            margin-top:20px;
+            line-height: 60px;
+        }
+        #hero #right{
+            width:100%;
+            height:initial;
+             min-height: 70vh;
+        }
+    
+    #right #imgcontainer
+    {
+        width:90%;
+        height:initial;
+        min-height:inherit;
+    }
+    #right #rgtlnks{
+        display: none;
+    }
+    #btmlnks{
+        display: flex;
+    }
+ #btmlnks a{
+  font-size:10px;
+}
+}
